@@ -1,4 +1,5 @@
 import javax.swing.plaf.basic.BasicSplitPaneUI;
+import java.util.* ;
 
 public class BinaryTree {
 
@@ -21,7 +22,7 @@ public class BinaryTree {
     //ROOT
 
     //LEVELORDER TRAVERSAL
-    //1. QUEUE (FIFO PROPERTY)
+    //1. QUEUE (FIFO PROPERTY) FIRST IN FIRST OUT
     //2. NULL USE FOR NEXT LINE
     //3. BFS(BREADTH FIRST SEARCH) DFS (DEPTH FIRST SEARCH)
 
@@ -93,6 +94,40 @@ public class BinaryTree {
 
     public static void levelOrder(Node root) //level order traversal
     {
+        if(root == null)
+        {
+            return ;
+        }
+       Queue<Node> q = new LinkedList<>() ;
+       q.add(root) ;
+       q.add(null) ;
+
+       while(!q.isEmpty()){
+           Node currNode = q.remove() ;
+           if(currNode==null)
+           {
+               System.out.println();
+               if(q.isEmpty())
+               {
+                   break ;
+               }
+               else {
+                   q.add(null) ;
+               }
+           }
+           else
+           {
+               System.out.println(currNode.data+" ");
+               if(currNode.left != null)
+               {
+                   q.add(currNode.left) ;
+               }
+               if(currNode.right!=null)
+               {
+                   q.add(currNode.right) ;
+               }
+           }
+       }
 
     }
 
@@ -106,6 +141,7 @@ public class BinaryTree {
 //        System.out.println(root.data);
 //        preorder(root) ; //preorder call
 //        inorder(root) ;   //inorder call
+//        levelOrder(root);   //levelorder
 
     }
 }
