@@ -1,3 +1,10 @@
+TREES AND GRAPHS ARE  NON - LINEAR DATA STRUCTURES
+
+Why Tree is considered a non-linear data structure?
+The data in a tree are not stored in a sequential manner i.e.,
+they are not stored linearly. Instead, they are arranged on multiple levels or
+we can say it is a hierarchical structure.
+
 
            (7)
         /   |   \
@@ -12,4 +19,31 @@
    1. ROOT -> TOPMOST NODE (7)
    2. PARENT -> Node which connects to the child (7,8,2,11,3)
    3. CHILD -> Node which is connected by another node is its child (8,2,11,1,0,2,3,4)
-   4. LEAF/EXTERNAL NODE ->
+   4. LEAF/EXTERNAL NODE -> Nodes with no children
+   5. INTERNAL NODE -> NODES WITH ATLEAST ONE CHILD
+   6.DEPTH -> No of edges from root to the node.
+   7.HEIGHT -> No of edges from node to the deepest leaf.
+   8.SIBLING -> Nodes belonging to the same parents
+   9. ANCESTORS -> (8,2,11,3,7)
+   10.DESCENDANT -> (3,4)
+   11.SUBTREE -> (8,2,11)
+
+
+   THREE TYPES OF TREE DATA STRUCTURES
+   1. BINARY TREE :- each node can have max of two children linked to.
+   2. TERNARY TREE :- each node can have max of three chid nodes.
+   3. N-ary TREE / GENERIC TREE  :- multiple nodes
+
+
+   TRAVERSAL:-
+    PREORDER-TRAVERSAL
+    IN ORDER TRAVERSAL
+    POST-ORDER TRAVERSAL
+
+
+
+
+
+
+
+
