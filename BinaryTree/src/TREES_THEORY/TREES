@@ -1,0 +1,15 @@
+
+           (7)
+        /   |   \
+     (8)   (2)   (11)
+   /   \    /        \
+  (1)  (0) (2)      (3)
+                     /
+                   (4)
+
+   BASIC TERMINOLOGY OF TREES
+
+   1. ROOT -> TOPMOST NODE (7)
+   2. PARENT -> Node which connects to the child (7,8,2,11,3)
+   3. CHILD -> Node which is connected by another node is its child (8,2,11,1,0,2,3,4)
+   4. LEAF/EXTERNAL NODE ->
