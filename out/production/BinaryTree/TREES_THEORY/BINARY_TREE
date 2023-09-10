@@ -1,0 +1,17 @@
+BINARY TREE
+ WHICH HAS ATMOST TWO CHILDRENS FOR ALL THE NODES
+
+ -> trees are made up of nodes and edges
+ -> n nodes = n - 1 (EDGES)
+ -> DEGREE => no of direct children
+ -> BINARY TREE = TREE OF DEGREE <=2 {can have 0,1,2 children)
+
+
+BINARY TREE TRAVERSALS
+ -> DEPTH-FIRST SEARCH ALGORITHMS
+        1.PREORDER TRAVERSAL (root,left,right)
+        2.INORDER TRAVERSAL (left,root,right)
+        3.POSTORDER TRAVERSAL (left,right,root)
+
+ -> BREADTH-FIRST SEARCH ALGORITHMS
+        1.LEVEL ORDER TRAVERSAL
