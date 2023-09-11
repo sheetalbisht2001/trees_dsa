@@ -1,5 +1,4 @@
 package InorderTreeTraversal;
-import PreorderTreeTraversal.RecursivePreorderTraversal;
 
 import java.util.* ;
 
@@ -7,10 +6,10 @@ import java.util.* ;
 
 public class RecursiveInorderTraversal {
 
-    RecursiveInorderTraversal.TreeNode root ;
+    TreeNode root ;
     static class TreeNode{
-        private RecursiveInorderTraversal.TreeNode left ;
-        private RecursiveInorderTraversal.TreeNode right ;
+        private TreeNode left ;
+        private TreeNode right ;
         private int data ; //generic type
 
         public TreeNode(int data){

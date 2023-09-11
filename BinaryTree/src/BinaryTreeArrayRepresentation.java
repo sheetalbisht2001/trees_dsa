@@ -1,0 +1,8 @@
+
+
+
+//SEQUENTIAL REPRESENTATION (ARRAY)
+//DYNAMIC REPRESENTATION(LINKED LIST)
+public class BinaryTreeArrayRepresentation {
+
+}

@@ -1,7 +1,6 @@
 package InorderTreeTraversal;
 
-import PreorderTreeTraversal.IterativePreorderTraversal;
-import PreorderTreeTraversal.RecursivePreorderTraversal;
+
 
 import java.util.Stack;
 
@@ -45,7 +44,7 @@ public class IterativeInorderTraversal {
             return;
         }
 
-        Stack<TreeNode> stack = new Stack<>();
+        Stack<TreeNode> stack = new Stack<>(); //create stack
         TreeNode temp = root ;
 
         while (!stack.isEmpty() || temp != null) {
