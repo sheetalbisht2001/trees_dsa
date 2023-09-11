@@ -1,14 +1,12 @@
 package PreorderTreeTraversal;
 
-import com.sun.source.tree.BinaryTree;
-import com.sun.source.tree.ExpressionTree;
-import com.sun.source.tree.TreeVisitor;
+
 
 public class RecursivePreorderTraversal {
 
 
-    private TreeNode root ;
-    private static class TreeNode{
+    TreeNode root ;
+    static class TreeNode{
         private TreeNode left ;
         private TreeNode right ;
         private int data ; //generic type
@@ -46,7 +44,7 @@ public class RecursivePreorderTraversal {
             return ;
         }
 
-        System.out.println(root.data + " ");
+        System.out.print(root.data + " ");
         preOrder(root.left);
         preOrder(root.right);
     }
