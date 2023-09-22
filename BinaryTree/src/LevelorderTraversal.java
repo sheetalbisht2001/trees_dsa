@@ -132,9 +132,7 @@ if(node == null) return ans; // at this point ans is also empty;
         
         return arr;
         
-        //declare arr and temp_arr with root value 
         
-        //start while loop until temp_arr is empty
     }
 }
 
