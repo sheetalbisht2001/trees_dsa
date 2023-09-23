@@ -107,34 +107,33 @@ if(node == null) return ans; // at this point ans is also empty;
 
 
 
-    class Solution
-{
-    //Function to return the level order traversal of a tree.
-    static ArrayList <Integer> levelOrder(Node node) 
-    {
-        // Your code here
-        int root_value = node.data;
-        ArrayList<Integer> arr = new ArrayList();
-        ArrayList<Node> temp_arr = new ArrayList();
-        arr.add(root_value);
-        temp_arr.add(node);
+//     class Solution
+// {
+//     //Function to return the level order traversal of a tree.
+//     static ArrayList <Integer> levelOrder(Node node) 
+//     {
+//         // Your code here
+//         int root_value = node.data;
+//         ArrayList<Integer> arr = new ArrayList();
+//         ArrayList<Node> temp_arr = new ArrayList();
+//         arr.add(root_value);
+//         temp_arr.add(node);
         
-        while(!temp_arr.isEmpty())
-        {
-            Node fv = temp_arr.get(0);
-            Node fvr = fv.right;
-            Node fvl = fv.left;
-            if(fvl != null) {arr.add(fvl.data); temp_arr.add(fvl);}
-            if(fvr != null) {arr.add(fvr.data); temp_arr.add(fvr);}
+//         while(!temp_arr.isEmpty())
+//         {
+//             Node fv = temp_arr.get(0);
+//             Node fvr = fv.right;
+//             Node fvl = fv.left;
+//             if(fvl != null) {arr.add(fvl.data); temp_arr.add(fvl);}
+//             if(fvr != null) {arr.add(fvr.data); temp_arr.add(fvr);}
             
-            temp_arr.remove(0);
-        }
+//             temp_arr.remove(0);
+//         }
         
-        return arr;
+//         return arr;
         
-        
-    }
-}
+//     }
+// }
 
 
 
