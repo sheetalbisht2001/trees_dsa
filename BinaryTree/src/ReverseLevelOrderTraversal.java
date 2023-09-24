@@ -34,10 +34,40 @@
 // Expected Time Complexity: O(N)
 // Expected Auxiliary Space: O(N)
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.Queue;
 
-
-
+import org.w3c.dom.Node;
 
 public class ReverseLevelOrderTraversal {
+{
+    public ArrayList<Integer> reverseLevelOrder(Node node) 
+    {
+        // code here
+        ArrayList<Integer> arr = new ArrayList<Integer>() ;
+        Queue<Node> Q = new LinkedList<Node>() ;
+        
+        Q.add(node) ;
+        
+        while(Q.size()>0)
+        { 
+            Node temp = Q.remove() ;
+            arr.add(temp.data) ;
+            if(temp.right!=null)
+            {
+               Q.add(temp.right) ;
+            }
+            if(temp.left!=null)
+            {
+                Q.add(temp.left) ;
+            }
+        }
+        
+        Collections.reverse(arr);
+        return arr ;
+    }
+}      
     
-}
+
